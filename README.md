@@ -1,7 +1,9 @@
+![GenAI Crash Course — Beginner Guide](assets/genai-crash-course-banner.png)
+
 # GenAI Crash Course (Beginner, Python) — Build Real Apps Fast
 
 This repository contains a **beginner-friendly crash course in Generative AI (GenAI)** focused on **application building** (not deep theory).  
-You will learn how to **access LLMs**, write reliable prompts, and build practical features like **structured outputs, tools/actions, and Retrieval-Augmented Generation (RAG)**.
+You will learn how to **access LLMs**, write reliable prompts, and build practical features like **structured outputs, tools/actions, Retrieval-Augmented Generation (RAG), and agents**.
 
 > If you’re new to GenAI and want to build something real quickly—this course is for you.
 
@@ -13,7 +15,7 @@ You will learn to build GenAI apps using **Python** and modern LLM providers:
 
 - Closed/proprietary LLM APIs: **OpenAI, Azure OpenAI, Google Gemini, Anthropic Claude**
 - Open-source model options via **Hugging Face**:
-  - Hosted API (fast start)
+  - Hosted API (fast start; no big downloads)
   - Optional local inference using `transformers`
 
 The course is intentionally **hands-on**:
@@ -39,14 +41,14 @@ The course is intentionally **hands-on**:
 
 ## What you’ll build (capstone)
 
-**Internal Knowledge Assistant (RAG + simple tools)**
+**Internal Knowledge Assistant (RAG + agents/tools)**
 
 By the end, you will have a working app that can:
 - ingest documents (txt/pdf)
 - create embeddings + vector search
 - answer questions using retrieved context
 - return answers **with citations**
-- optionally call a simple tool/action (e.g., “draft an email”)
+- optionally run an **agentic workflow** that calls tools (e.g., calculator, file lookup, ticket payload generator)
 
 ---
 
@@ -57,12 +59,26 @@ See the full syllabus here: **[`Syllabus.md`](./Syllabus.md)**
 High-level flow:
 1. **Accessing LLMs** (keys + SDKs + first calls, unified runner)
 2. **Prompting patterns** (reliability, constraints, examples)
-3. **Structured outputs + tools**
+3. **Structured outputs + tools** (route actions safely)
 4. **Embeddings + semantic search**
-5. **RAG end-to-end**
-6. **Evaluation + testing**
-7. **Agent workflows (minimal, practical)**
+5. **RAG end-to-end** (doc QA with citations)
+6. **Agents & workflows** (multi-step, tool-using apps)
+7. **Evaluation + testing** (golden set, regression checks)
 8. **Shipping** (FastAPI/Streamlit + security/cost basics)
+
+---
+
+## GenAI frameworks we’ll reference (optional, but included)
+
+You can build everything in this course **without** heavy frameworks (good for beginners).  
+However, we include optional sections showing how popular frameworks help you scale:
+
+- **LangChain / LangGraph** (agents, tool calling, RAG building blocks)  
+  Docs: https://docs.langchain.com/oss/python/langchain/quickstart
+- **LlamaIndex** (RAG + agents “over your data” with strong ingestion tooling)  
+  Docs: https://developers.llamaindex.ai/python/framework/
+- **Google ADK (Agent Development Kit)** (agent development + orchestration, optimized for Gemini but model-agnostic)  
+  Docs: https://google.github.io/adk-docs/
 
 ---
 
@@ -166,13 +182,4 @@ These are publicly accessible and high quality:
 
 This repo is intended for learning and teaching.  
 If you reuse external materials (Microsoft, OpenAI Cookbook, etc.), follow their licenses and attribution requirements.
-
----
-
-### Next steps
-
-If you want, I can also generate:
-- `requirements.txt` matching the notebooks
-- a `.gitignore` tuned for `.env`, notebooks, and Python artifacts
-- a simple `src/` starter package (LLM router + RAG skeleton)
 
