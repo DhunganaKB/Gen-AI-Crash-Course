@@ -52,7 +52,7 @@ By the end, you will have a working app that can:
 
 ## Course structure
 
-See the full syllabus here: **[`Syllabous.md`](./Syllabous.md)**
+See the full syllabus here: **[`Syllabus.md`](./Syllabus.md)**
 
 High-level flow:
 1. **Accessing LLMs** (keys + SDKs + first calls, unified runner)
