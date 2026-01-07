@@ -1,8 +1,8 @@
 ![GenAI Crash Course — Beginner Guide](assets/genai-crash-course-banner.png)
 
-# GenAI Crash Course (Beginner, Python) — Build Real Apps Fast
+# GenAI Beginner Course (Python) — Build Real Apps
 
-This repository contains a **beginner-friendly crash course in Generative AI (GenAI)** focused on **application building** (not deep theory).  
+This repository contains a **beginner-friendly course in Generative AI (GenAI)** focused on **application building** (not deep theory and advance).  
 You will learn how to **access LLMs**, write reliable prompts, and build practical features like **structured outputs, tools/actions, Retrieval-Augmented Generation (RAG), and agents**.
 
 > If you’re new to GenAI and want to build something real quickly—this course is for you.
